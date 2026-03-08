@@ -152,34 +152,44 @@ else:
     st.info("👋 Welcome, Investigator. Please upload a chat log to begin the reconstruction process.")
     st.image("https://img.icons8.com/clouds/500/000000/data-configuration.png", width=300)
 
-# --- FOOTER SECTION ---
+# --- FINAL HIGHLIGHTED FOOTER ---
 st.markdown("---")
-footer_highlight_html = """
+footer_final_html = """
 <style>
 .main .block-container {
-    padding-bottom: 70px !important;
+    padding-bottom: 80px !important;
 }
 .highligthed-footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #0e1117;
-    color: #fafafa;
+    background-color: #0e1117; /* Dark Professional Background */
+    color: #ffffff;           /* Pure White Text */
     text-align: center;
     padding: 15px 0;
-    font-size: 16px;
-    font-weight: 500;
-    z-index: 100;
-    border-top: 2px solid #ff4b4b;
+    font-size: 15px;
+    z-index: 1000;
+    border-top: 3px solid #ff4b4b; /* Bright Streamlit Red Accent */
+    box-shadow: 0px -5px 15px rgba(0,0,0,0.3); /* Adds depth */
 }
-.highligthed-footer p {
+.footer-text {
     margin: 0;
+    letter-spacing: 0.5px;
+}
+.usn-tag {
+    color: #ff4b4b; /* Highlighted USN Color */
+    font-weight: bold;
 }
 </style>
 <div class="highligthed-footer">
-    <p>🎓 Project Developed by: <b>Janhvi Ghode</b> & <b>Gunjan Narnaware</b></p>
+    <p class="footer-text">
+        🎓 <b>Project Developed by:</b> <br>
+        Janhvi Ghode (<span class="usn-tag">CS24D001</span>) &nbsp; | &nbsp; 
+        Gunjan Narnaware (<span class="usn-tag">CS24D005</span>)
+    </p>
 </div>
 """
-st.markdown(footer_highlight_html, unsafe_allow_html=True)
+st.markdown(footer_final_html, unsafe_allow_html=True)
+
 
