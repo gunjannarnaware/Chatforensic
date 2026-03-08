@@ -151,3 +151,35 @@ else:
     # Corrected spelling: "Investigator"
     st.info("👋 Welcome, Investigator. Please upload a chat log to begin the reconstruction process.")
     st.image("https://img.icons8.com/clouds/500/000000/data-configuration.png", width=300)
+
+# --- FOOTER SECTION ---
+st.markdown("---")
+footer_highlight_html = """
+<style>
+.main .block-container {
+    padding-bottom: 70px !important;
+}
+.highligthed-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0e1117;
+    color: #fafafa;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 100;
+    border-top: 2px solid #ff4b4b;
+}
+.highligthed-footer p {
+    margin: 0;
+}
+</style>
+<div class="highligthed-footer">
+    <p>🎓 Project Developed by: <b>Janhvi Ghode</b> & <b>Gunjan Narnaware</b></p>
+</div>
+"""
+st.markdown(footer_highlight_html, unsafe_allow_html=True)
+
